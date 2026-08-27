@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -8,17 +9,17 @@
 
 <title>서울 드론청소 | 건물 외벽·태양광패널·유리창 청소 | KDRONE26</title>
 
-<meta name="description" content="서울 드론청소 전문 KDRONE26. 서울특별시 건물 외벽청소, 태양광패널청소, 유리창청소, 간판청소, 부분청소 서비스를 제공합니다. 은평구, 마포구, 서대문구 등 서울 전 지역 출장가능.">
+<meta name="description" content="서울 드론청소 전문 KDRONE26 · 한국드론청소. 서울특별시 건물 외벽청소, 태양광패널청소, 유리창청소, 간판청소, 부분청소 서비스를 제공합니다. 서울 전 지역 출장가능.">
 
-<meta name="keywords" content="서울드론청소, 서울청소드론, 서울외벽청소, 서울건물외벽청소, 서울태양광패널청소, 서울유리창청소, 서울간판청소, 서울부분청소, 은평구드론청소, 마포구드론청소, 서대문구드론청소">
+<meta name="keywords" content="서울드론청소, 서울청소드론, 서울외벽청소, 서울건물외벽청소, 서울태양광패널청소, 서울유리창청소, 서울간판청소, 서울부분청소, 은평구드론청소, 마포구드론청소, 서대문구드론청소, KDRONE26, 한국드론청소">
 
 <meta name="robots" content="index, follow">
 
-<meta name="author" content="KDRONE26">
+<meta name="author" content="KDRONE26 · 한국드론청소">
 
 <link rel="canonical" href="https://kdrone26.github.io/seoul.html">
 
-<meta property="og:title" content="서울 드론청소 | KDRONE26">
+<meta property="og:title" content="서울 드론청소 | KDRONE26 · 한국드론청소">
 <meta property="og:description" content="서울특별시 전 지역 드론청소 출장 서비스">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://kdrone26.github.io/seoul.html">
@@ -42,50 +43,112 @@ body {
     background: #fff;
 }
 
+/* HEADER */
+
 header {
     background: #111;
     color: white;
     text-align: center;
-    padding: 55px 20px;
+    padding: 60px 20px;
 }
 
 .logo {
-    font-size: 46px;
+    font-size: 48px;
     font-weight: 900;
+    letter-spacing: 1px;
 }
 
-.k {
+.logo .k {
     color: #E60012;
 }
 
-.drone {
+.logo .drone {
     color: #0066CC;
 }
 
-.number {
+.logo .number {
     color: #A7A9AC;
 }
 
 .slogan {
     color: #7CFC00;
+    font-size: 21px;
+    font-weight: bold;
+    margin: 8px 0 15px;
+}
+
+.brand-name {
     font-size: 20px;
     font-weight: bold;
+    margin: 5px 0 15px;
 }
 
 header h1 {
-    font-size: 32px;
+    font-size: 34px;
+    margin: 15px 0;
 }
+
+header p {
+    font-size: 17px;
+}
+
+/* BUTTON */
 
 .call-button {
     display: inline-block;
     background: #19A974;
     color: white;
-    padding: 15px 32px;
+    padding: 16px 34px;
     border-radius: 30px;
     text-decoration: none;
     font-weight: bold;
+    font-size: 17px;
     margin-top: 15px;
 }
+
+.call-button:hover {
+    opacity: 0.85;
+}
+
+/* SOCIAL BUTTON */
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.social-button {
+    display: inline-block;
+    padding: 14px 22px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.kakao-button {
+    background: #FEE500;
+    color: #111;
+}
+
+.sms-button {
+    background: #0066CC;
+    color: white;
+}
+
+.blog-button {
+    background: #03C75A;
+    color: white;
+}
+
+.social-button:hover {
+    opacity: 0.85;
+}
+
+/* NAV */
 
 nav {
     position: sticky;
@@ -100,34 +163,90 @@ nav {
 nav a {
     color: #222;
     text-decoration: none;
-    margin: 0 8px;
+    margin: 0 7px;
     font-weight: bold;
     font-size: 14px;
 }
 
+nav a:hover {
+    color: #0066CC;
+}
+
+/* SECTION */
+
 section {
-    max-width: 900px;
+    max-width: 950px;
     margin: auto;
-    padding: 55px 20px;
+    padding: 60px 20px;
 }
 
 h2 {
-    font-size: 28px;
+    font-size: 29px;
     border-left: 5px solid #0066CC;
     padding-left: 12px;
+    margin-bottom: 28px;
 }
+
+/* INTRO */
+
+.intro {
+    text-align: center;
+    background: #f5f5f5;
+}
+
+.intro h2 {
+    border-left: none;
+    padding-left: 0;
+}
+
+.intro strong {
+    font-size: 21px;
+}
+
+/* BOX */
 
 .box {
     border: 1px solid #ddd;
-    border-radius: 12px;
-    padding: 22px;
-    margin: 15px 0;
-    background: #fafafa;
+    border-radius: 14px;
+    padding: 25px;
+    margin: 18px 0;
+    background: white;
 }
 
 .box h3 {
+    margin-top: 0;
+    font-size: 21px;
     color: #0066CC;
 }
+
+/* WHY */
+
+.why {
+    background: #f5f5f5;
+}
+
+.why-box {
+    background: white;
+    border-radius: 14px;
+    padding: 25px;
+    margin: 15px 0;
+    border: 1px solid #ddd;
+}
+
+/* FAQ */
+
+.faq {
+    border-bottom: 1px solid #ddd;
+    padding: 18px 0;
+}
+
+.faq strong {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+/* CONTACT */
 
 .contact {
     background: #f5f5f5;
@@ -136,32 +255,58 @@ h2 {
 
 .phone {
     display: inline-block;
-    font-size: 30px;
+    font-size: 31px;
     font-weight: bold;
     color: #111;
     text-decoration: none;
-    margin: 15px;
+    margin: 15px 0;
 }
+
+/* FOOTER */
 
 footer {
     background: #111;
     color: white;
     text-align: center;
-    padding: 30px 20px;
+    padding: 35px 20px;
 }
 
-@media(max-width:600px) {
+.footer-brand {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
 
     .logo {
-        font-size: 38px;
+        font-size: 39px;
     }
 
     header h1 {
-        font-size: 26px;
+        font-size: 27px;
+    }
+
+    .slogan {
+        font-size: 18px;
+    }
+
+    .brand-name {
+        font-size: 17px;
+    }
+
+    nav {
+        padding: 12px 2px;
+    }
+
+    nav a {
+        margin: 0 4px;
+        font-size: 12px;
     }
 
     section {
-        padding: 40px 18px;
+        padding: 45px 18px;
     }
 
     h2 {
@@ -172,12 +317,20 @@ footer {
         font-size: 25px;
     }
 
+    .social-button {
+        width: 100%;
+        max-width: 320px;
+    }
+
 }
 
 </style>
+
 </head>
 
 <body>
+
+<!-- HEADER -->
 
 <header>
 
@@ -187,6 +340,10 @@ footer {
 
 <p class="slogan">
 이륙하는 순간 깨끗함이 시작된다.
+</p>
+
+<p class="brand-name">
+한국드론청소
 </p>
 
 <h1>
@@ -201,6 +358,11 @@ footer {
 건물 외벽 · 태양광패널 · 유리창 · 간판 · 부분청소
 </p>
 
+<p>
+사람이 직접 접근하기 어려운 현장까지<br>
+현장 상황에 맞는 청소 솔루션을 제안합니다.
+</p>
+
 <a class="call-button" href="tel:01090918826">
 📞 서울 드론청소 전화상담
 </a>
@@ -208,24 +370,35 @@ footer {
 </header>
 
 
+<!-- NAV -->
+
 <nav>
 
 <a href="index.html">홈</a>
+<a href="#about">서울청소</a>
 <a href="#service">서비스</a>
 <a href="#area">서울지역</a>
+<a href="#work">작업분야</a>
+<a href="#faq">FAQ</a>
 <a href="#contact">문의</a>
 
 </nav>
 
 
-<section>
+<!-- ABOUT -->
+
+<section id="about" class="intro">
 
 <h2>서울 드론청소 전문업체</h2>
 
 <p>
-<strong>KDRONE26</strong>은 서울특별시 지역의
-건물 외벽청소, 태양광패널청소, 유리창청소,
-간판청소 및 부분청소 서비스를 제공합니다.
+<strong>서울특별시 전 지역 드론청소 출장</strong>
+</p>
+
+<p>
+KDRONE26 · 한국드론청소는 서울 지역의
+건물 외벽청소, 태양광패널청소,
+유리창청소, 간판청소 및 부분청소 서비스를 제공합니다.
 </p>
 
 <p>
@@ -235,12 +408,15 @@ footer {
 </p>
 
 <p>
-건물 전체 청소뿐만 아니라 특정 오염구간만
-선택하는 부분청소도 상담할 수 있습니다.
+건물 전체 청소뿐만 아니라
+오염된 특정 구간만 선택하는
+<strong>부분청소</strong>도 상담 가능합니다.
 </p>
 
 </section>
 
+
+<!-- SERVICE -->
 
 <section id="service">
 
@@ -252,7 +428,7 @@ footer {
 <h3>🏢 서울 건물 외벽청소</h3>
 
 <p>
-서울 지역 건물 외벽에 발생한 먼지와 오염물을
+서울 지역 건물 외벽에 쌓인 먼지와 오염물을
 현장 조건에 맞춰 청소합니다.
 </p>
 
@@ -276,8 +452,9 @@ footer {
 <h3>🪟 서울 유리창청소</h3>
 
 <p>
-고층 건물 외부 유리면 등 사람이 직접 접근하기
-어려운 유리창 청소를 상담합니다.
+고층 건물 외부 유리면 등
+사람이 직접 접근하기 어려운
+유리창 청소를 상담합니다.
 </p>
 
 </div>
@@ -285,11 +462,12 @@ footer {
 
 <div class="box">
 
-<h3>🪧 서울 간판청소</h3>
+<h3>🪧 서울 간판 및 시설물청소</h3>
 
 <p>
-높은 위치에 설치된 간판과 외부 시설물의
-오염을 현장에 맞춰 관리합니다.
+높은 위치에 설치된 간판과
+각종 외부 시설물의 오염을
+현장 조건에 맞춰 관리합니다.
 </p>
 
 </div>
@@ -300,8 +478,22 @@ footer {
 <h3>✨ 서울 부분청소</h3>
 
 <p>
-건물 전체가 아니라 오염된 특정 부분만
-선택하여 집중적으로 청소할 수 있습니다.
+건물 전체가 아니라
+오염된 특정 부분만 선택하여
+집중적으로 청소하는 부분청소도 상담 가능합니다.
+</p>
+
+</div>
+
+
+<div class="box">
+
+<h3>🏭 서울 공장·창고 시설물청소</h3>
+
+<p>
+공장과 창고 외벽,
+시설물 및 태양광설비 등의
+청소 방법을 상담합니다.
 </p>
 
 </div>
@@ -309,18 +501,81 @@ footer {
 </section>
 
 
-<section id="area">
+<!-- WHY -->
 
-<h2>서울특별시 출장지역</h2>
+<section class="why">
+
+<h2>서울 드론청소가 필요한 이유</h2>
+
+
+<div class="why-box">
+
+<h3>✔ 높은 곳의 청소</h3>
 
 <p>
-KDRONE26은 서울특별시 전 지역
-드론청소 출장 상담이 가능합니다.
+고층 건물 외벽이나 높은 위치의
+시설물처럼 접근이 어려운 현장의
+청소 방법을 상담합니다.
 </p>
+
+</div>
+
+
+<div class="why-box">
+
+<h3>✔ 필요한 곳만 부분청소</h3>
+
+<p>
+건물 전체가 아닌 오염된 특정 구간만
+선택하여 집중적으로 청소할 수 있습니다.
+</p>
+
+</div>
+
+
+<div class="why-box">
+
+<h3>✔ 현장 맞춤형 청소</h3>
+
+<p>
+건물의 높이와 구조,
+오염 상태 및 주변 환경 등을 확인하여
+현장에 적합한 청소 방법을 제안합니다.
+</p>
+
+</div>
+
+
+<div class="why-box">
+
+<h3>✔ 서울 전 지역 출장가능</h3>
+
+<p>
+은평구를 비롯하여 서울특별시
+25개 자치구 전 지역 출장 상담이 가능합니다.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- AREA -->
+
+<section id="area">
+
+<h2>서울특별시 드론청소 출장지역</h2>
+
+<p>
+KDRONE26 · 한국드론청소는
+서울특별시 전 지역으로 출장하여
+드론청소 서비스를 상담합니다.
+</p>
+
 
 <div class="box">
 
-<h3>서울 25개 자치구</h3>
+<h3>📍 서울 25개 자치구</h3>
 
 <p>
 은평구 · 마포구 · 서대문구 · 종로구 · 중구 ·
@@ -333,14 +588,16 @@ KDRONE26은 서울특별시 전 지역
 
 </div>
 
+
 <div class="box">
 
-<h3>서울 지역 드론청소</h3>
+<h3>📍 서울 드론청소</h3>
 
 <p>
 서울 건물 외벽청소 · 서울 태양광패널청소 ·
 서울 유리창청소 · 서울 간판청소 ·
-서울 부분청소 등 현장에 맞는 청소 서비스를 상담합니다.
+서울 부분청소 등 현장에 맞는
+청소 서비스를 상담합니다.
 </p>
 
 </div>
@@ -348,40 +605,32 @@ KDRONE26은 서울특별시 전 지역
 </section>
 
 
-<section>
+<!-- WORK -->
 
-<h2>서울에서 드론청소가 필요한 현장</h2>
+<section id="work">
 
-<p>
-✔ 고층 건물 외벽
-</p>
+<h2>서울 드론청소 작업분야</h2>
 
-<p>
-✔ 높은 위치의 유리창
-</p>
+<p>✔ 고층 건물 외벽청소</p>
 
-<p>
-✔ 건물 옥상 및 시설물
-</p>
+<p>✔ 높은 위치의 유리창청소</p>
 
-<p>
-✔ 태양광발전설비 및 태양광패널
-</p>
+<p>✔ 태양광발전설비 및 태양광패널청소</p>
 
-<p>
-✔ 높은 위치의 간판
-</p>
+<p>✔ 높은 위치의 간판 및 시설물청소</p>
 
-<p>
-✔ 사람이 접근하기 어려운 오염구간
-</p>
+<p>✔ 건물 특정 구간 부분청소</p>
 
-<p>
-✔ 건물 일부 구간의 부분청소
-</p>
+<p>✔ 공장 및 창고 시설물청소</p>
+
+<p>✔ 전원주택 및 주택 외벽청소</p>
+
+<p>✔ 사람이 접근하기 어려운 현장 청소</p>
 
 </section>
 
+
+<!-- CONSULT -->
 
 <section>
 
@@ -396,7 +645,7 @@ KDRONE26은 서울특별시 전 지역
 <p>
 현장 위치와 청소 대상의 높이,
 오염 상태 및 주변 환경 등을 확인하여
-작업 가능 여부를 상담합니다.
+작업 가능 여부와 청소 방법을 상담합니다.
 </p>
 
 <p>
@@ -407,6 +656,90 @@ KDRONE26은 서울특별시 전 지역
 </section>
 
 
+<!-- FAQ -->
+
+<section id="faq">
+
+<h2>서울 드론청소 자주 묻는 질문</h2>
+
+
+<div class="faq">
+
+<strong>
+Q. 서울 어느 지역까지 출장하나요?
+</strong>
+
+<p>
+서울특별시 25개 자치구 전 지역
+출장 상담이 가능합니다.
+</p>
+
+</div>
+
+
+<div class="faq">
+
+<strong>
+Q. 건물 일부만 청소할 수 있나요?
+</strong>
+
+<p>
+가능합니다.
+오염된 특정 구간만 선택하여
+부분청소 방식으로 상담할 수 있습니다.
+</p>
+
+</div>
+
+
+<div class="faq">
+
+<strong>
+Q. 태양광패널도 청소할 수 있나요?
+</strong>
+
+<p>
+패널의 위치와 주변 환경 등
+현장 조건을 확인한 후
+작업 가능 여부를 상담합니다.
+</p>
+
+</div>
+
+
+<div class="faq">
+
+<strong>
+Q. 서울 외 지역도 출장하나요?
+</strong>
+
+<p>
+네.
+경기·인천을 비롯하여
+전국 지역 출장 상담이 가능합니다.
+</p>
+
+</div>
+
+
+<div class="faq">
+
+<strong>
+Q. 견적은 어떻게 받나요?
+</strong>
+
+<p>
+청소할 장소의 위치와 현장 사진을
+보내주시면 보다 정확한 상담이 가능합니다.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
 <section id="contact" class="contact">
 
 <h2>서울 드론청소 문의</h2>
@@ -416,11 +749,13 @@ KDRONE26은 서울특별시 전 지역
 </p>
 
 <p>
-간판청소 · 부분청소
+간판청소 · 부분청소 · 시설물청소
 </p>
 
 <p>
-<strong>서울특별시 전 지역 출장가능</strong>
+<strong>
+서울특별시 전 지역 출장가능
+</strong>
 </p>
 
 <a class="phone" href="tel:01090918826">
@@ -430,36 +765,67 @@ KDRONE26은 서울특별시 전 지역
 <br>
 
 <a class="call-button" href="tel:01090918826">
-서울 드론청소 전화상담
+📞 전화 상담하기
 </a>
+
+
+<div class="social-buttons">
+
+<a
+class="social-button sms-button"
+href="sms:01090918826">
+💬 문자 상담하기
+</a>
+
+
+<a
+class="social-button kakao-button"
+href="http://pf.kakao.com/_MxlrZX/chat"
+target="_blank"
+rel="noopener">
+💬 카카오톡 상담
+</a>
+
+
+<a
+class="social-button blog-button"
+href="https://m.blog.naver.com/kdrone26"
+target="_blank"
+rel="noopener">
+📝 네이버 블로그
+</a>
+
+</div>
 
 </section>
 
 
+<!-- FOOTER -->
+
 <footer>
 
-<strong>KDRONE26</strong>
-
-<br><br>
-
-이륙하는 순간 깨끗함이 시작된다.
-
-<br><br>
-
-서울 드론청소 · 건물 외벽청소 ·
-태양광패널청소 · 유리창청소 · 간판청소
+<div class="footer-brand">
+KDRONE26
+</div>
 
 <br>
 
-전국출장가능 · 010-9091-8826
+<div>
+이륙하는 순간 깨끗함이 시작된다.
+</div>
 
-<br><br>
+<br>
 
-<a href="index.html" style="color:white;">
-KDRONE26 홈페이지로 돌아가기
-</a>
+<div>
+한국드론청소 서울서부지사
+</div>
+
+<div>
+대표: 김광연 | 사업자번호: 309-40-01359
+</div>
 
 </footer>
+
 
 </body>
 </html>
