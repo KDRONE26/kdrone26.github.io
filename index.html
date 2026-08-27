@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>KDRONE26 | 드론청소 전문업체</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, "Noto Sans KR", sans-serif;
+    color: #222;
+    background: #fff;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255,255,255,0.96);
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.nav {
+    max-width: 1200px;
+    margin: auto;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 900;
+    color: #111;
+}
+
+.logo span {
+    color: #e60012;
+}
+
+nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #222;
+    font-weight: 600;
+}
+
+.hero {
+    min-height: 100vh;
+    background:
+        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55)),
+        url("https://images.unsplash.com/photo-1473968512647-3e447244af8f?auto=format&fit=crop&w=1800&q=80")
+        center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 100px 20px 50px;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 8vw, 85px);
+    margin: 0 0 20px;
+    font-weight: 900;
+}
+
+.hero h1 span {
+    color: #39ff14;
+}
+
+.hero p {
+    font-size: clamp(18px, 3vw, 28px);
+    line-height: 1.7;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 15px 30px;
+    border-radius: 50px;
+    background: #39ff14;
+    color: #111;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+section {
+    padding: 90px 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 50px;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.service {
+    padding: 35px 25px;
+    border-radius: 15px;
+    background: #f5f5f5;
+    text-align: center;
+}
+
+.service h3 {
+    font-size: 23px;
+}
+
+.service p {
+    line-height: 1.7;
+    color: #666;
+}
+
+.about {
+    background: #111;
+    color: white;
+    text-align: center;
+}
+
+.about p {
+    max-width: 800px;
+    margin: auto;
+    line-height: 2;
+    font-size: 18px;
+}
+
+.contact {
+    text-align: center;
+}
+
+.phone {
+    font-size: 38px;
+    font-weight: 900;
+    margin: 25px 0;
+}
+
+footer {
+    background: #111;
+    color: #aaa;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+@media (max-width: 700px) {
+
+    .nav {
+        height: 60px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    nav a {
+        display: none;
+    }
+
+    .services {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 70px 20px;
+    }
+
+    .section-title {
+        font-size: 30px;
+    }
+
+    .phone {
+        font-size: 28px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="nav">
+        <div class="logo"><span>K</span>DRONE26</div>
+
+        <nav>
+            <a href="#home">HOME</a>
+            <a href="#services">서비스</a>
+            <a href="#about">회사소개</a>
+            <a href="#contact">문의</a>
+        </nav>
+    </div>
+</header>
+
+<section class="hero" id="home">
+    <div>
+        <h1><span>K</span>DRONE26</h1>
+
+        <p>
+            이륙하는 순간<br>
+            깨끗함이 시작된다.
+        </p>
+
+        <a class="button" href="tel:01090918826">
+            010-9091-8826
+        </a>
+    </div>
+</section>
+
+<section id="services">
+    <div class="container">
+
+        <h2 class="section-title">드론청소 서비스</h2>
+
+        <div class="services">
+
+            <div class="service">
+                <h3>🏢 건물 외벽청소</h3>
+                <p>
+                    사람이 직접 접근하기 어려운
+                    고층 건물 외벽을 드론을 활용해
+                    효율적으로 청소합니다.
+                </p>
+            </div>
+
+            <div class="service">
+                <h3>☀️ 태양광패널 청소</h3>
+                <p>
+                    먼지와 오염물질이 쌓인
+                    태양광패널을 깨끗하게 관리하여
+                    효율적인 운영을 돕습니다.
+                </p>
+            </div>
+
+            <div class="service">
+                <h3>🪟 유리·창호 청소</h3>
+                <p>
+                    접근이 어려운 유리창과
+                    건물 외부 창호 청소에도
+                    드론청소 솔루션을 제공합니다.
+                </p>
+            </div>
+
+            <div class="service">
+                <h3>🏪 간판 청소</h3>
+                <p>
+                    높은 위치의 간판과 외부 시설물을
+                    보다 편리하게 관리할 수 있습니다.
+                </p>
+            </div>
+
+            <div class="service">
+                <h3>🏠 전원주택 청소</h3>
+                <p>
+                    지붕과 외벽 등 사람이 접근하기
+                    불편한 공간의 청소를 지원합니다.
+                </p>
+            </div>
+
+            <div class="service">
+                <h3>🚁 맞춤형 드론청소</h3>
+                <p>
+                    현장 환경을 확인하고
+                    필요한 구간에 맞는
+                    청소 방법을 제안합니다.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="about" id="about">
+
+    <div class="container">
+
+        <h2 class="section-title">KDRONE26</h2>
+
+        <p>
+            KDRONE26은 드론을 활용한 새로운 청소 솔루션을 제공합니다.
+            <br><br>
+            사람이 직접 접근하기 어려운 높은 곳과
+            넓은 공간까지 현장에 맞는 방법으로 접근합니다.
+            <br><br>
+            건물 외벽, 태양광패널, 유리창, 간판,
+            전원주택 등 다양한 현장에
+            드론청소 서비스를 제공합니다.
+        </p>
+
+    </div>
+
+</section>
+
+<section id="contact" class="contact">
+
+    <div class="container">
+
+        <h2 class="section-title">청소 문의</h2>
+
+        <p>
+            현장 사진을 보내주시면
+            청소 가능 여부를 상담해드립니다.
+        </p>
+
+        <div class="phone">
+            010-9091-8826
+        </div>
+
+        <a class="button" href="tel:01090918826">
+            전화 상담하기
+        </a>
+
+    </div>
+
+</section>
+
+<footer>
+    KDRONE26 · 이륙하는 순간 깨끗함이 시작된다.
+    <br>
+    전국출장가능 · 010-9091-8826
+</footer>
+
+</body>
+</html>
