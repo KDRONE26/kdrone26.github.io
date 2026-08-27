@@ -14,7 +14,6 @@
 <meta name="keywords" content="KDRONE26, 한국드론청소, 드론청소, 드론청소업체, 드론청소전문업체, 건물외벽청소, 태양광패널청소, 태양광청소, 유리창청소, 간판청소, 부분청소, 서울드론청소, 경기드론청소, 인천드론청소, 전국드론청소">
 
 <meta name="robots" content="index, follow">
-
 <meta name="author" content="KDRONE26 · 한국드론청소">
 
 <link rel="canonical" href="https://kdrone26.github.io/">
@@ -43,7 +42,10 @@ body {
     background: #fff;
 }
 
-/* HEADER */
+
+/* =========================
+   HEADER
+========================= */
 
 header {
     background: #111;
@@ -92,46 +94,37 @@ header p {
     font-size: 17px;
 }
 
-/* BUTTON */
 
-.call-button {
-    display: inline-block;
-    background: #19A974;
-    color: white;
-    padding: 16px 34px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 17px;
-    margin-top: 15px;
-}
+/* =========================
+   상담 버튼
+========================= */
 
-.call-button:hover {
-    opacity: 0.85;
-}
-
-/* SOCIAL BUTTON */
-
-.social-buttons {
+.button-area {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 10px;
     flex-wrap: wrap;
     margin-top: 20px;
 }
 
-.social-button {
+.call-button,
+.sms-button,
+.kakao-button,
+.blog-button {
     display: inline-block;
-    padding: 14px 22px;
+    padding: 14px 25px;
     border-radius: 30px;
     text-decoration: none;
     font-weight: bold;
     font-size: 16px;
+    margin: 5px;
+    transition: 0.2s;
 }
 
-.kakao-button {
-    background: #FEE500;
-    color: #111;
+.call-button {
+    background: #19A974;
+    color: white;
 }
 
 .sms-button {
@@ -139,16 +132,28 @@ header p {
     color: white;
 }
 
+.kakao-button {
+    background: #FEE500;
+    color: #111;
+}
+
 .blog-button {
     background: #03C75A;
     color: white;
 }
 
-.social-button:hover {
+.call-button:hover,
+.sms-button:hover,
+.kakao-button:hover,
+.blog-button:hover {
     opacity: 0.85;
+    transform: translateY(-2px);
 }
 
-/* NAV */
+
+/* =========================
+   NAV
+========================= */
 
 nav {
     position: sticky;
@@ -172,7 +177,10 @@ nav a:hover {
     color: #0066CC;
 }
 
-/* SECTION */
+
+/* =========================
+   SECTION
+========================= */
 
 section {
     max-width: 950px;
@@ -187,7 +195,10 @@ h2 {
     margin-bottom: 28px;
 }
 
-/* INTRO */
+
+/* =========================
+   INTRO
+========================= */
 
 .intro {
     text-align: center;
@@ -203,7 +214,10 @@ h2 {
     font-size: 21px;
 }
 
-/* SERVICE */
+
+/* =========================
+   SERVICE
+========================= */
 
 .service-grid {
     display: grid;
@@ -229,7 +243,10 @@ h2 {
     font-size: 21px;
 }
 
-/* WHY */
+
+/* =========================
+   WHY
+========================= */
 
 .why {
     background: #f5f5f5;
@@ -243,7 +260,10 @@ h2 {
     border: 1px solid #ddd;
 }
 
-/* WORK */
+
+/* =========================
+   WORK
+========================= */
 
 .work-list {
     font-size: 17px;
@@ -253,7 +273,10 @@ h2 {
     margin: 13px 0;
 }
 
-/* REGION */
+
+/* =========================
+   REGION
+========================= */
 
 .region-area {
     border: 1px solid #ddd;
@@ -316,7 +339,10 @@ h2 {
     color: #eee;
 }
 
-/* FAQ */
+
+/* =========================
+   FAQ
+========================= */
 
 .faq {
     border-bottom: 1px solid #ddd;
@@ -329,7 +355,10 @@ h2 {
     margin-bottom: 5px;
 }
 
-/* CONTACT */
+
+/* =========================
+   CONTACT
+========================= */
 
 .contact {
     background: #f5f5f5;
@@ -345,7 +374,10 @@ h2 {
     margin: 15px 0;
 }
 
-/* FOOTER */
+
+/* =========================
+   FOOTER
+========================= */
 
 footer {
     background: #111;
@@ -354,17 +386,40 @@ footer {
     padding: 35px 20px;
 }
 
-footer a {
-    color: white;
-    text-decoration: none;
+.footer-logo {
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: 1px;
 }
 
-.footer-brand {
-    font-size: 21px;
+.footer-logo .k {
+    color: #E60012;
+}
+
+.footer-logo .drone {
+    color: #0066CC;
+}
+
+.footer-logo .number {
+    color: #A7A9AC;
+}
+
+.footer-slogan {
+    color: #7CFC00;
     font-weight: bold;
+    margin: 8px 0 20px;
 }
 
-/* MOBILE */
+.footer-info {
+    color: #ddd;
+    font-size: 14px;
+    line-height: 2;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
 
 @media (max-width: 700px) {
 
@@ -413,9 +468,20 @@ footer a {
         font-size: 25px;
     }
 
-    .social-button {
+    .button-area {
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .call-button,
+    .sms-button,
+    .kakao-button,
+    .blog-button {
+        display: block;
         width: 100%;
         max-width: 320px;
+        margin: 5px auto;
+        text-align: center;
     }
 
 }
@@ -424,7 +490,13 @@ footer a {
 
 </head>
 
+
 <body>
+
+
+<!-- =========================
+     HEADER
+========================= -->
 
 <header>
 
@@ -454,8 +526,13 @@ KDRONE26 드론청소 전문업체
 </p>
 
 <p>
-<strong>수도권 · 강원권 · 전라권 · 경상권 · 제주권 전국출장가능</strong>
+<strong>
+수도권 · 강원권 · 전라권 · 경상권 · 제주권 전국출장가능
+</strong>
 </p>
+
+
+<!-- 상단 상담 버튼 -->
 
 <div class="button-area">
 
@@ -469,19 +546,26 @@ KDRONE26 드론청소 전문업체
 
 <a class="kakao-button"
 href="http://pf.kakao.com/_MxlrZX/chat"
-target="_blank">
+target="_blank"
+rel="noopener">
 💬 카카오톡 상담
 </a>
 
 <a class="blog-button"
 href="https://m.blog.naver.com/kdrone26"
-target="_blank">
-🟢 네이버 블로그
+target="_blank"
+rel="noopener">
+📝 네이버 블로그
 </a>
 
 </div>
 
 </header>
+
+
+<!-- =========================
+     NAV
+========================= -->
 
 <nav>
 
@@ -493,6 +577,11 @@ target="_blank">
 <a href="#contact">문의</a>
 
 </nav>
+
+
+<!-- =========================
+     INTRO
+========================= -->
 
 <section id="about" class="intro">
 
@@ -521,6 +610,11 @@ KDRONE26 · 한국드론청소는 드론을 활용하여
 
 </section>
 
+
+<!-- =========================
+     SERVICE
+========================= -->
+
 <section id="service">
 
 <h2>한국드론청소 주요 서비스</h2>
@@ -538,6 +632,7 @@ KDRONE26 · 한국드론청소는 드론을 활용하여
 
 </div>
 
+
 <div class="service">
 
 <h3>☀️ 태양광패널청소</h3>
@@ -548,6 +643,7 @@ KDRONE26 · 한국드론청소는 드론을 활용하여
 </p>
 
 </div>
+
 
 <div class="service">
 
@@ -560,6 +656,7 @@ KDRONE26 · 한국드론청소는 드론을 활용하여
 
 </div>
 
+
 <div class="service">
 
 <h3>🪧 간판 및 시설물청소</h3>
@@ -571,6 +668,7 @@ KDRONE26 · 한국드론청소는 드론을 활용하여
 
 </div>
 
+
 <div class="service">
 
 <h3>✨ 부분청소</h3>
@@ -581,6 +679,7 @@ KDRONE26 · 한국드론청소는 드론을 활용하여
 </p>
 
 </div>
+
 
 <div class="service">
 
@@ -596,6 +695,11 @@ KDRONE26 · 한국드론청소는 드론을 활용하여
 </div>
 
 </section>
+
+
+<!-- =========================
+     WHY
+========================= -->
 
 <section class="why">
 
@@ -613,6 +717,7 @@ KDRONE26 · 한국드론청소는 드론을 활용하여
 
 </div>
 
+
 <div class="why-box">
 
 <h3>✔ 필요한 곳만 집중청소</h3>
@@ -623,6 +728,7 @@ KDRONE26 · 한국드론청소는 드론을 활용하여
 </p>
 
 </div>
+
 
 <div class="why-box">
 
@@ -636,6 +742,7 @@ KDRONE26 · 한국드론청소는 드론을 활용하여
 
 </div>
 
+
 <div class="why-box">
 
 <h3>✔ 전국출장가능</h3>
@@ -648,6 +755,11 @@ KDRONE26 · 한국드론청소는 드론을 활용하여
 </div>
 
 </section>
+
+
+<!-- =========================
+     WORK
+========================= -->
 
 <section id="work">
 
@@ -669,6 +781,11 @@ KDRONE26 · 한국드론청소는 드론을 활용하여
 
 </section>
 
+
+<!-- =========================
+     REGION
+========================= -->
+
 <section id="region">
 
 <h2>전국 출장지역</h2>
@@ -684,6 +801,7 @@ KDRONE26 · 한국드론청소는 드론을 활용하여
 현장 위치와 작업 조건을 확인하여
 드론청소 서비스를 상담합니다.
 </p>
+
 
 <div class="region-area">
 
@@ -714,6 +832,7 @@ KDRONE26 · 한국드론청소는 드론을 활용하여
 
 </div>
 
+
 <div class="region-area">
 
 <h3>📍 강원권</h3>
@@ -730,6 +849,7 @@ KDRONE26 · 한국드론청소는 드론을 활용하여
 </p>
 
 </div>
+
 
 <div class="region-area">
 
@@ -748,6 +868,7 @@ KDRONE26 · 한국드론청소는 드론을 활용하여
 
 </div>
 
+
 <div class="region-area">
 
 <h3>📍 전라권</h3>
@@ -764,6 +885,7 @@ KDRONE26 · 한국드론청소는 드론을 활용하여
 </p>
 
 </div>
+
 
 <div class="region-area">
 
@@ -782,6 +904,7 @@ KDRONE26 · 한국드론청소는 드론을 활용하여
 
 </div>
 
+
 <div class="region-area">
 
 <h3>📍 제주권</h3>
@@ -796,6 +919,7 @@ KDRONE26 · 한국드론청소는 드론을 활용하여
 </p>
 
 </div>
+
 
 <div class="nationwide">
 
@@ -822,9 +946,15 @@ KDRONE26 · 한국드론청소는
 
 </section>
 
+
+<!-- =========================
+     FAQ
+========================= -->
+
 <section id="faq">
 
 <h2>한국드론청소 자주 묻는 질문</h2>
+
 
 <div class="faq">
 
@@ -840,6 +970,7 @@ Q. 드론청소는 어떤 곳에 가능한가요?
 
 </div>
 
+
 <div class="faq">
 
 <strong>
@@ -853,6 +984,7 @@ Q. 건물 일부만 청소할 수 있나요?
 </p>
 
 </div>
+
 
 <div class="faq">
 
@@ -868,6 +1000,7 @@ Q. 태양광패널도 청소할 수 있나요?
 
 </div>
 
+
 <div class="faq">
 
 <strong>
@@ -881,6 +1014,7 @@ Q. 전국 출장도 가능한가요?
 </p>
 
 </div>
+
 
 <div class="faq">
 
@@ -897,6 +1031,11 @@ Q. 견적은 어떻게 받나요?
 
 </section>
 
+
+<!-- =========================
+     CONTACT
+========================= -->
+
 <section id="contact" class="contact">
 
 <h2>KDRONE26 · 한국드론청소 문의</h2>
@@ -911,42 +1050,39 @@ Q. 견적은 어떻게 받나요?
 
 <p>
 <strong>
-수도권 · 강원권 · 충청권 · 전라권 · 경상권 · 제주권 
-<div>
-전국출장가능
-</div>
-    
+수도권 · 강원권 · 충청권 · 전라권 · 경상권 · 제주권
 </strong>
+</p>
+
+<p>
+<strong>전국출장가능</strong>
 </p>
 
 <a class="phone" href="tel:01090918826">
 📞 010-9091-8826
 </a>
 
-<br>
+
+<!-- 하단도 상단과 동일한 버튼 디자인 -->
+
+<div class="button-area">
 
 <a class="call-button" href="tel:01090918826">
 📞 전화 상담하기
 </a>
 
-<div class="social-buttons">
-
-<a
-class="social-button sms-button"
-href="sms:01090918826">
+<a class="sms-button" href="sms:01090918826">
 💬 문자 상담하기
 </a>
 
-<a
-class="social-button kakao-button"
+<a class="kakao-button"
 href="http://pf.kakao.com/_MxlrZX/chat"
 target="_blank"
 rel="noopener">
 💬 카카오톡 상담
 </a>
 
-<a
-class="social-button blog-button"
+<a class="blog-button"
 href="https://m.blog.naver.com/kdrone26"
 target="_blank"
 rel="noopener">
@@ -956,6 +1092,11 @@ rel="noopener">
 </div>
 
 </section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
 
 <footer>
 
@@ -980,3 +1121,7 @@ rel="noopener">
 </div>
 
 </footer>
+
+
+</body>
+</html>
