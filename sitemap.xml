@@ -1,41 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-    <url>
-        <loc>https://kdrone26.github.io/</loc>
-    </url>
-
-    <url>
-        <loc>https://kdrone26.github.io/seoul.html</loc>
-    </url>
-
-    <url>
-        <loc>https://kdrone26.github.io/gyeonggi.html</loc>
-    </url>
-
-    <url>
-        <loc>https://kdrone26.github.io/goyang.html</loc>
-    </url>
-
-    <url>
-        <loc>https://kdrone26.github.io/paju.html</loc>
-    </url>
-
-    <url>
-        <loc>https://kdrone26.github.io/gimpo.html</loc>
-    </url>
-
-    <url>
-        <loc>https://kdrone26.github.io/guri.html</loc>
-    </url>
-
-    <url>
-        <loc>https://kdrone26.github.io/namyangju.html</loc>
-    </url>
-
-    <url>
-        <loc>https://kdrone26.github.io/suwon.html</loc>
-    </url>
-
+<url><loc>https://kdrone26.github.io/</loc></url>
+<url><loc>https://kdrone26.github.io/seoul.html</loc></url>
+<url><loc>https://kdrone26.github.io/gyeonggi.html</loc></url>
+<url><loc>https://kdrone26.github.io/goyang.html</loc></url>
+<url><loc>https://kdrone26.github.io/paju.html</loc></url>
+<url><loc>https://kdrone26.github.io/gimpo.html</loc></url>
+<url><loc>https://kdrone26.github.io/guri.html</loc></url>
+<url><loc>https://kdrone26.github.io/namyangju.html</loc></url>
+<url><loc>https://kdrone26.github.io/suwon.html</loc></url>
 </urlset>
