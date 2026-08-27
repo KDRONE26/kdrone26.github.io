@@ -5,7 +5,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- 네이버 사이트 소유확인 -->
 <meta name="naver-site-verification" content="9e06aae381fedff78777685939cd0cefa05f7b34">
 
 <title>KDRONE26 · 한국드론청소 | 드론청소 전문업체 | 건물 외벽·태양광패널·유리창 청소</title>
@@ -83,13 +82,13 @@ header {
     color: #7CFC00;
     font-size: 21px;
     font-weight: bold;
-    margin: 8px 0 22px;
+    margin: 8px 0 15px;
 }
 
 .brand-name {
     font-size: 20px;
     font-weight: bold;
-    margin: 5px 0;
+    margin: 5px 0 15px;
 }
 
 header h1 {
@@ -103,7 +102,7 @@ header p {
 
 
 /* =========================
-   CALL BUTTON
+   BUTTON
 ========================= */
 
 .call-button {
@@ -124,7 +123,7 @@ header p {
 
 
 /* =========================
-   NAVIGATION
+   NAV
 ========================= */
 
 nav {
@@ -250,27 +249,65 @@ h2 {
    REGION
 ========================= */
 
-.region-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
+.region-area {
+    border: 1px solid #ddd;
+    border-radius: 14px;
+    padding: 25px;
+    margin: 18px 0;
+    background: #fafafa;
 }
 
-.region-grid a {
+.region-area h3 {
+    margin-top: 0;
+    font-size: 22px;
+    color: #0066CC;
+}
+
+.region-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.region-links a {
     display: block;
-    padding: 15px 8px;
+    padding: 12px 8px;
     text-align: center;
     border: 1px solid #ddd;
-    border-radius: 10px;
-    text-decoration: none;
-    color: #222;
-    font-weight: bold;
+    border-radius: 8px;
     background: white;
+    color: #222;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.region-grid a:hover {
+.region-links a:hover {
     color: #0066CC;
     border-color: #0066CC;
+}
+
+.region-detail {
+    color: #555;
+    margin-bottom: 0;
+}
+
+.nationwide {
+    margin-top: 25px;
+    padding: 32px 20px;
+    border-radius: 14px;
+    background: #111;
+    color: white;
+    text-align: center;
+}
+
+.nationwide h3 {
+    font-size: 25px;
+    margin-top: 0;
+}
+
+.nationwide p {
+    color: #eee;
 }
 
 
@@ -326,7 +363,7 @@ footer a {
 }
 
 .footer-brand {
-    font-size: 20px;
+    font-size: 21px;
     font-weight: bold;
 }
 
@@ -374,7 +411,7 @@ footer a {
         grid-template-columns: 1fr;
     }
 
-    .region-grid {
+    .region-links {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -435,21 +472,16 @@ KDRONE26 드론청소 전문업체
 
 
 <!-- =========================
-     NAVIGATION
+     NAV
 ========================= -->
 
 <nav>
 
 <a href="#about">회사소개</a>
-
 <a href="#service">서비스</a>
-
 <a href="#work">작업분야</a>
-
 <a href="#region">출장지역</a>
-
 <a href="#faq">FAQ</a>
-
 <a href="#contact">문의</a>
 
 </nav>
@@ -674,45 +706,179 @@ KDRONE26 · 한국드론청소는 드론을 활용하여
 
 <section id="region">
 
-<h2>지역별 드론청소</h2>
+<h2>전국 출장지역</h2>
 
 <p>
-KDRONE26 · 한국드론청소는 서울·경기·인천을 비롯하여
-전국 지역 출장 상담이 가능합니다.
+<strong>KDRONE26 · 한국드론청소</strong>는
+서울·경기·인천을 비롯하여
+전국 지역으로 출장 상담이 가능합니다.
 </p>
 
-<div class="region-grid">
+<p>
+수도권을 중심으로 강원권·충청권·전라권·경상권·제주권까지
+현장 위치와 작업 조건을 확인하여
+드론청소 서비스를 상담합니다.
+</p>
 
-<a href="seoul.html">
-서울특별시
-</a>
 
-<a href="gyeonggi.html">
-경기도
-</a>
+<!-- 수도권 -->
 
-<a href="goyang.html">
-고양시
-</a>
+<div class="region-area">
 
-<a href="paju.html">
-파주시
-</a>
+<h3>📍 수도권</h3>
 
-<a href="gimpo.html">
-김포시
-</a>
+<p>
+서울특별시 · 인천광역시 · 경기도
+</p>
 
-<a href="guri.html">
-구리시
-</a>
+<div class="region-links">
 
-<a href="namyangju.html">
-남양주시
-</a>
+<a href="seoul.html">서울특별시</a>
 
-<a href="suwon.html">
-수원시
+<a href="gyeonggi.html">경기도</a>
+
+<a href="goyang.html">고양시</a>
+
+<a href="paju.html">파주시</a>
+
+<a href="gimpo.html">김포시</a>
+
+<a href="guri.html">구리시</a>
+
+<a href="namyangju.html">남양주시</a>
+
+<a href="suwon.html">수원시</a>
+
+</div>
+
+<p class="region-detail">
+서울 전 지역 · 인천 전 지역 ·
+수원 · 고양 · 파주 · 김포 · 구리 ·
+남양주 등 경기도 주요 지역
+</p>
+
+</div>
+
+
+<!-- 강원권 -->
+
+<div class="region-area">
+
+<h3>📍 강원권</h3>
+
+<p>
+강원특별자치도 전 지역
+</p>
+
+<p class="region-detail">
+춘천 · 원주 · 강릉 · 속초 · 동해 ·
+태백 · 삼척 · 홍천 · 횡성 · 평창 ·
+정선 · 철원 · 화천 · 양구 · 인제 ·
+고성 · 양양 등
+</p>
+
+</div>
+
+
+<!-- 충청권 -->
+
+<div class="region-area">
+
+<h3>📍 충청권</h3>
+
+<p>
+대전광역시 · 세종특별자치시 ·
+충청북도 · 충청남도
+</p>
+
+<p class="region-detail">
+청주 · 충주 · 제천 · 천안 · 아산 ·
+공주 · 서산 · 당진 · 논산 · 보령 ·
+홍성 · 예산 · 태안 등
+</p>
+
+</div>
+
+
+<!-- 전라권 -->
+
+<div class="region-area">
+
+<h3>📍 전라권</h3>
+
+<p>
+광주광역시 · 전북특별자치도 ·
+전라남도
+</p>
+
+<p class="region-detail">
+전주 · 군산 · 익산 · 정읍 · 남원 ·
+김제 · 목포 · 여수 · 순천 · 광양 ·
+나주 · 무안 · 해남 · 장성 등
+</p>
+
+</div>
+
+
+<!-- 경상권 -->
+
+<div class="region-area">
+
+<h3>📍 경상권</h3>
+
+<p>
+부산광역시 · 대구광역시 · 울산광역시 ·
+경상북도 · 경상남도
+</p>
+
+<p class="region-detail">
+포항 · 경주 · 구미 · 안동 · 김천 ·
+영주 · 영천 · 상주 · 창원 · 김해 ·
+진주 · 양산 · 거제 · 통영 등
+</p>
+
+</div>
+
+
+<!-- 제주권 -->
+
+<div class="region-area">
+
+<h3>📍 제주권</h3>
+
+<p>
+제주특별자치도 전 지역
+</p>
+
+<p class="region-detail">
+제주시 · 서귀포시 및
+제주 전 지역 출장 상담
+</p>
+
+</div>
+
+
+<!-- 전국 -->
+
+<div class="nationwide">
+
+<h3>🚁 전국출장가능</h3>
+
+<p>
+KDRONE26 · 한국드론청소는
+수도권을 비롯하여 전국 지역의
+드론청소 현장을 상담합니다.
+</p>
+
+<p>
+건물 외벽 · 태양광패널 · 유리창 ·
+간판 · 부분청소 등
+청소가 필요한 현장의 위치와 사진을
+보내주시면 상담이 가능합니다.
+</p>
+
+<a class="call-button" href="tel:01090918826">
+📞 전국 출장 상담하기
 </a>
 
 </div>
