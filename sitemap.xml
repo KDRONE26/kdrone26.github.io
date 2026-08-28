@@ -1,30 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://kdrone26.github.io/</loc>
-  </url>
-  <url>
-    <loc>https://kdrone26.github.io/seoul.html</loc>
-  </url>
-  <url>
-    <loc>https://kdrone26.github.io/gyeonggi.html</loc>
-  </url>
-  <url>
-    <loc>https://kdrone26.github.io/goyang.html</loc>
-  </url>
-  <url>
-    <loc>https://kdrone26.github.io/paju.html</loc>
-  </url>
-  <url>
-    <loc>https://kdrone26.github.io/gimpo.html</loc>
-  </url>
-  <url>
-    <loc>https://kdrone26.github.io/guri.html</loc>
-  </url>
-  <url>
-    <loc>https://kdrone26.github.io/namyangju.html</loc>
-  </url>
-  <url>
-    <loc>https://kdrone26.github.io/suwon.html</loc>
-  </url>
+
+    <!-- 메인 -->
+    <url>
+        <loc>https://kdrone26.github.io/</loc>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- 서울 -->
+    <url>
+        <loc>https://kdrone26.github.io/seoul.html</loc>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- 경기도 -->
+    <url>
+        <loc>https://kdrone26.github.io/gyeonggi.html</loc>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- 고양시 -->
+    <url>
+        <loc>https://kdrone26.github.io/goyang.html</loc>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- 파주시 -->
+    <url>
+        <loc>https://kdrone26.github.io/paju.html</loc>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- 김포시 -->
+    <url>
+        <loc>https://kdrone26.github.io/gimpo.html</loc>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- 구리시 -->
+    <url>
+        <loc>https://kdrone26.github.io/guri.html</loc>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- 남양주시 -->
+    <url>
+        <loc>https://kdrone26.github.io/namyangju.html</loc>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- 수원시 -->
+    <url>
+        <loc>https://kdrone26.github.io/suwon.html</loc>
+        <priority>0.8</priority>
+    </url>
+
 </urlset>
