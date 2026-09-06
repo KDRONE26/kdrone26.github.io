@@ -48,10 +48,10 @@ HEADER
 ========================= */
 
 header{
-    background:#fff;
+    background:#111;
+    color:#fff;
     text-align:center;
     padding:35px 20px 25px;
-    border-bottom:1px solid #eee;
 }
 
 .logo{
@@ -62,15 +62,15 @@ header{
 }
 
 .logo .k{
-    color:#e60012;
+    color:#E60012;
 }
 
 .logo .drone{
-    color:#168cff;
+    color:#0066CC;
 }
 
 .logo .number{
-    color:#999;
+    color:#A7A9AC;
 }
 
 .brand{
@@ -81,7 +81,7 @@ header{
 
 .slogan{
     margin-top:8px;
-    color:#18b875;
+    color:#7CFC00;
     font-size:17px;
     font-weight:800;
 }
@@ -101,12 +101,12 @@ header{
 
 .header-service{
     margin-top:10px;
-    color:#555;
+    color:#ddd;
 }
 
 .header-local{
     margin-top:8px;
-    color:#168cff;
+    color:#0066CC;
     font-weight:800;
 }
 
@@ -133,7 +133,7 @@ nav a{
 }
 
 nav a:hover{
-    color:#168cff;
+    color:#0066CC;
 }
 
 /* =========================
@@ -155,8 +155,8 @@ section{
 h2{
     font-size:27px;
     margin:0 0 25px;
-    padding-left:15px;
-    border-left:6px solid #168cff;
+    padding-left:12px;
+    border-left:5px solid #0066CC;
     line-height:1.3;
     letter-spacing:-1px;
 }
@@ -274,7 +274,7 @@ WORK LIST
     position:absolute;
     left:0;
     top:0;
-    color:#18B875;
+    color:#19A974;
     font-weight:900;
     font-size:17px;
 }
@@ -322,7 +322,7 @@ FIELD
     position:absolute;
     left:0;
     top:0;
-    color:#18B875;
+    color:#19A974;
     font-weight:900;
     font-size:17px;
 }
@@ -395,7 +395,7 @@ CONTACT
 }
 
 .contact-area{
-    color:#168cff;
+    color:#0066CC;
     font-weight:800;
     margin-bottom:20px;
 }
@@ -404,7 +404,7 @@ CONTACT
     display:inline-block;
     font-size:30px;
     font-weight:900;
-    color:#168cff;
+    color:#0066CC;
     margin-bottom:20px;
 }
 
@@ -425,13 +425,40 @@ CONTACT
     padding:13px 20px;
     border-radius:7px;
     font-weight:800;
-    background:#fff;
-    border:1px solid #ddd;
+    border:none;
+    transition:opacity .2s ease;
 }
 
 .contact-btn:hover{
-    border-color:#168cff;
-    color:#168cff;
+    opacity:.85;
+}
+
+/* 전화상담 */
+
+.call-button{
+    background:#19A974;
+    color:#fff;
+}
+
+/* 문자상담 */
+
+.sms-button{
+    background:#0066CC;
+    color:#fff;
+}
+
+/* 카카오톡 */
+
+.kakao-button{
+    background:#FEE500;
+    color:#111;
+}
+
+/* 네이버 블로그 */
+
+.blog-button{
+    background:#03C75A;
+    color:#fff;
 }
 
 /* =========================
@@ -441,8 +468,9 @@ FOOTER
 footer{
     margin-top:30px;
     padding:40px 20px;
-    background:#f7f7f7;
+    background:#111;
     text-align:center;
+    color:#fff;
 }
 
 .footer-logo{
@@ -452,26 +480,26 @@ footer{
 }
 
 .footer-logo .k{
-    color:#e60012;
+    color:#E60012;
 }
 
 .footer-logo .drone{
-    color:#168cff;
+    color:#0066CC;
 }
 
 .footer-logo .number{
-    color:#999;
+    color:#A7A9AC;
 }
 
 .footer-slogan{
     margin-top:10px;
-    color:#18b875;
+    color:#7CFC00;
     font-weight:800;
 }
 
 .footer-info{
     margin-top:18px;
-    color:#555;
+    color:#ddd;
     line-height:1.8;
 }
 
@@ -1024,11 +1052,11 @@ KDRONE26 드론청소 상담
 
 <div class="button-group">
 
-<a class="contact-btn" href="tel:01090918826">
+<a class="contact-btn call-button" href="tel:01090918826">
 전화상담
 </a>
 
-<a class="contact-btn" href="sms:01090918826">
+<a class="contact-btn sms-button" href="sms:01090918826">
 문자상담
 </a>
 
