@@ -91,7 +91,55 @@
 <url>
     <loc>https://kdrone26.github.io/sejong.html</loc>
     <priority>0.9</priority>
-</url>    
-    
+</url>
+
+<!-- 울산 -->
+<url>
+    <loc>https://kdrone26.github.io/ulsan.html</loc>
+    <priority>0.9</priority>
+</url>
+
+<!-- 경상남도 -->
+<url>
+    <loc>https://kdrone26.github.io/gyeongsangnamdo.html</loc>
+    <priority>0.9</priority>
+</url>
+
+<!-- 경상북도 -->
+<url>
+    <loc>https://kdrone26.github.io/gyeongsangbukdo.html</loc>
+    <priority>0.9</priority>
+</url>
+
+<!-- 전북 -->
+<url>
+    <loc>https://kdrone26.github.io/jeonbuk.html</loc>
+    <priority>0.9</priority>
+</url>
+
+<!-- 전남 -->
+<url>
+    <loc>https://kdrone26.github.io/jeonnam.html</loc>
+    <priority>0.9</priority>
+</url>
+
+<!-- 광주 -->
+<url>
+    <loc>https://kdrone26.github.io/gwangju.html</loc>
+    <priority>0.9</priority>
+</url>
+
+<!-- 대구 -->
+<url>
+    <loc>https://kdrone26.github.io/daegu.html</loc>
+    <priority>0.9</priority>
+</url>
+
+<!-- 제주도 -->
+<url>
+    <loc>https://kdrone26.github.io/jeju.html</loc>
+    <priority>0.9</priority>
+</url>
+
 </urlset>
 ```
