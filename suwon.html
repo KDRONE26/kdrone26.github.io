@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="ko">
 <head>
 
@@ -22,10 +23,6 @@
 
 <style>
 
-/* =========================
-기본
-========================= */
-
 *{
     box-sizing:border-box;
 }
@@ -46,10 +43,6 @@ a{
     text-decoration:none;
     color:inherit;
 }
-
-/* =========================
-HEADER
-========================= */
 
 header{
     background:#111;
@@ -117,10 +110,6 @@ header{
     font-weight:900;
 }
 
-/* =========================
-상담 버튼
-========================= */
-
 .header-buttons{
     display:flex;
     justify-content:center;
@@ -161,10 +150,6 @@ header{
     opacity:.85;
 }
 
-/* =========================
-NAV
-========================= */
-
 nav{
     position:sticky;
     top:0;
@@ -185,10 +170,6 @@ nav a{
 nav a:hover{
     color:#0066CC;
 }
-
-/* =========================
-COMMON
-========================= */
 
 .container{
     max-width:1100px;
@@ -218,10 +199,6 @@ h3{
 p{
     margin-top:0;
 }
-
-/* =========================
-INTRO
-========================= */
 
 .intro{
     padding-top:45px;
@@ -254,10 +231,6 @@ INTRO
     margin-bottom:0;
 }
 
-/* =========================
-SERVICE
-========================= */
-
 .service-grid{
     display:grid;
     grid-template-columns:repeat(3,1fr);
@@ -285,9 +258,12 @@ SERVICE
     color:#555;
 }
 
-/* =========================
-WHY
-========================= */
+/* 서비스 상세페이지 연결 */
+.service-link{
+    display:block;
+    color:inherit;
+    text-decoration:none;
+}
 
 .why-grid{
     display:grid;
@@ -309,10 +285,6 @@ WHY
     margin-bottom:0;
     color:#555;
 }
-
-/* =========================
-WORK LIST
-========================= */
 
 .work-list{
     list-style:none;
@@ -337,10 +309,6 @@ WORK LIST
     font-size:17px;
 }
 
-/* =========================
-AREA
-========================= */
-
 .area-grid{
     display:grid;
     grid-template-columns:repeat(4,1fr);
@@ -355,10 +323,6 @@ AREA
     font-size:18px;
     font-weight:800;
 }
-
-/* =========================
-FIELD
-========================= */
 
 .field-list{
     list-style:none;
@@ -383,10 +347,6 @@ FIELD
     font-size:17px;
 }
 
-/* =========================
-CONSULTING
-========================= */
-
 .consult-box{
     background:#f7f7f7;
     padding:28px;
@@ -400,10 +360,6 @@ CONSULTING
 .consult-box p:last-child{
     margin-bottom:0;
 }
-
-/* =========================
-FAQ
-========================= */
 
 .faq-list{
     display:flex;
@@ -427,10 +383,6 @@ FAQ
     margin-bottom:0;
     color:#555;
 }
-
-/* =========================
-CONTACT
-========================= */
 
 .contact-box{
     background:#f7f7f7;
@@ -493,10 +445,6 @@ CONTACT
     opacity:.85;
 }
 
-/* =========================
-FOOTER
-========================= */
-
 footer{
     margin-top:30px;
     padding:42px 20px;
@@ -534,10 +482,6 @@ footer{
     color:#ddd;
     line-height:1.8;
 }
-
-/* =========================
-MOBILE
-========================= */
 
 @media(max-width:768px){
 
@@ -674,10 +618,6 @@ MOBILE
 
 </style>
 
-<!-- =========================
-JSON-LD
-========================= -->
-
 <script type="application/ld+json">
 {
     "@context":"https://schema.org",
@@ -713,10 +653,6 @@ JSON-LD
 </head>
 
 <body>
-
-<!-- =========================
-HEADER
-========================= -->
 
 <header>
 
@@ -774,26 +710,13 @@ rel="noopener">
 
 </header>
 
-<!-- =========================
-NAV
-========================= -->
-
 <nav>
 
-<a href="index.html">홈</a>
-<a href="#service">서비스</a>
-<a href="#area">수원지역</a>
-<a href="#work">작업분야</a>
-<a href="#faq">FAQ</a>
-<a href="#contact">문의</a>
+<a href="index.html">홈</a> <a href="#service">서비스</a> <a href="#area">수원지역</a> <a href="#work">작업분야</a> <a href="#faq">FAQ</a> <a href="#contact">문의</a>
 
 </nav>
 
 <main>
-
-<!-- =========================
-INTRO
-========================= -->
 
 <section class="intro">
 
@@ -826,10 +749,6 @@ KDRONE26 · 한국드론청소는 <strong>수원시 전 지역</strong>을 대�
 
 </section>
 
-<!-- =========================
-SERVICE
-========================= -->
-
 <section id="service">
 
 <div class="container">
@@ -838,22 +757,22 @@ SERVICE
 
 <div class="service-grid">
 
-<div class="service-box">
+<a class="service-box service-link" href="exterior-cleaning.html">
 <h3>🏢 수원시 건물 외벽청소</h3>
 <p>
 아파트, 상가, 공장, 창고 및 각종 건물 외벽의 먼지와 오염물을
 현장 조건에 맞춰 청소합니다. 높은 위치의 외벽은 현장 접근성과
 주변 환경을 확인한 후 드론청소 가능 여부를 상담합니다.
 </p>
-</div>
+</a>
 
-<div class="service-box">
+<a class="service-box service-link" href="solar-cleaning.html">
 <h3>☀️ 수원시 태양광패널청소</h3>
 <p>
 공장, 창고, 축사, 주택 등에 설치된 태양광패널의 먼지와 오염물을
 관리합니다. 패널 위치와 주변 환경을 확인하여 작업 방법을 검토합니다.
 </p>
-</div>
+</a>
 
 <div class="service-box">
 <h3>🪟 수원시 유리창청소</h3>
@@ -892,10 +811,6 @@ SERVICE
 </div>
 
 </section>
-
-<!-- =========================
-WHY
-========================= -->
 
 <section>
 
@@ -939,10 +854,6 @@ WHY
 
 </section>
 
-<!-- =========================
-WORK
-========================= -->
-
 <section id="work">
 
 <div class="container">
@@ -966,10 +877,6 @@ WORK
 </div>
 
 </section>
-
-<!-- =========================
-AREA
-========================= -->
 
 <section id="area">
 
@@ -1000,10 +907,6 @@ AREA
 </div>
 
 </section>
-
-<!-- =========================
-FIELD
-========================= -->
 
 <section>
 
@@ -1037,10 +940,6 @@ FIELD
 
 </section>
 
-<!-- =========================
-CONSULTING
-========================= -->
-
 <section>
 
 <div class="container">
@@ -1066,10 +965,6 @@ CONSULTING
 </div>
 
 </section>
-
-<!-- =========================
-FAQ
-========================= -->
 
 <section id="faq">
 
@@ -1145,10 +1040,6 @@ Q. 수원 외 지역도 출장 가능한가요?
 
 </section>
 
-<!-- =========================
-CONTACT
-========================= -->
-
 <section id="contact">
 
 <div class="container">
@@ -1204,10 +1095,6 @@ rel="noopener">
 </section>
 
 </main>
-
-<!-- =========================
-FOOTER
-========================= -->
 
 <footer>
 
