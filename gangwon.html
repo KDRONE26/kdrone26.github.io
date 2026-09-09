@@ -141,17 +141,35 @@ font-size: 21px;
 margin-top: 25px;
 }
 
-.service-link {
-color: inherit;
+.service-grid {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 20px;
+margin-top: 20px;
+}
+
+.service {
+display: block;
+padding: 25px;
+background: #f4f7fb;
+border-radius: 12px;
 text-decoration: none;
+color: inherit;
+transition: 0.2s;
 }
 
-.service-link:hover {
-color: #0066CC;
+.service:hover {
+transform: translateY(-3px);
+box-shadow: 0 5px 15px rgba(0,0,0,0.08);
 }
 
-.intro {
-font-size: 18px;
+.service h3 {
+margin-top: 0;
+font-size: 21px;
+}
+
+.service p {
+margin-bottom: 0;
 }
 
 .region-group {
@@ -233,11 +251,13 @@ font-size: 23px;
 font-size: 25px;
 }
 
+.service-grid {
+grid-template-columns: 1fr;
+}
+
 }
 
 </style>
-
-<!-- 지역 사업자 구조화 데이터 -->
 
 <script type="application/ld+json">
 {
@@ -433,27 +453,31 @@ KDRONE26 대표 김광연은 높은 건물 외벽이나 고층 유리창,
 
 <h2>주요 청소 서비스</h2>
 
-<h3>
-<a class="service-link" href="exterior-cleaning.html">
-건물 외벽청소
-</a>
-</h3>
+<div class="service-grid">
+
+<a class="service" href="exterior-cleaning.html">
+
+<h3>건물 외벽청소</h3>
 
 <p>
 높은 건물 외벽의 오염물과 먼지 등을
 현장 조건에 맞춰 청소합니다.
 </p>
 
-<h3>
-<a class="service-link" href="solar-cleaning.html">
-태양광패널청소
 </a>
-</h3>
+
+<a class="service" href="solar-cleaning.html">
+
+<h3>태양광패널청소</h3>
 
 <p>
 태양광패널 표면의 먼지와 오염물질을 제거하여
 패널을 깨끗하게 관리할 수 있도록 돕습니다.
 </p>
+
+</a>
+
+</div>
 
 <h3>유리창청소</h3>
 
