@@ -275,6 +275,16 @@ h2 {
     font-size: 21px;
 }
 
+.service-link {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+.service-link:hover {
+    color: #0066CC;
+}
+
 
 /* WHY */
 
@@ -326,10 +336,10 @@ h2 {
 }
 
 
-/* 경기지역 버튼
-   버튼 디자인 유지 / 클릭 기능 없음 */
+/* 경기지역 버튼 */
 
-.region-links span {
+.region-links span,
+.region-links a {
     display: block;
     padding: 12px 8px;
     text-align: center;
@@ -338,8 +348,14 @@ h2 {
     background: white;
     color: #222;
     font-weight: bold;
-    cursor: default;
+    cursor: pointer;
     user-select: none;
+    text-decoration: none;
+}
+
+.region-links a:hover {
+    color: #0066CC;
+    border-color: #0066CC;
 }
 
 
@@ -537,14 +553,19 @@ rel="noopener">
 
 <nav>
 
-<a href="index.html">홈</a> <a href="#about">회사소개</a> <a href="#service">서비스</a> <a href="#work">작업분야</a> <a href="#region">경기지역</a> <a href="#faq">FAQ</a> <a href="#contact">문의</a>
+<a href="index.html">홈</a>
+<a href="#about">회사소개</a>
+<a href="#service">서비스</a>
+<a href="#work">작업분야</a>
+<a href="#region">경기지역</a>
+<a href="#faq">FAQ</a>
+<a href="#contact">문의</a>
 
 </nav>
 
 <section id="about" class="intro">
 
 <h2>경기도 드론청소 전문업체</h2>
-</p>
 
 <p>
 KDRONE26 · 한국드론청소는
@@ -577,6 +598,8 @@ KDRONE26 · 한국드론청소는
 
 <div class="service">
 
+<a class="service-link" href="exterior-cleaning.html">
+
 <h3>🏢 경기도 건물 외벽청소</h3>
 
 <p>
@@ -585,9 +608,13 @@ KDRONE26 · 한국드론청소는
 현장 조건에 맞춰 청소합니다.
 </p>
 
+</a>
+
 </div>
 
 <div class="service">
+
+<a class="service-link" href="solar-cleaning.html">
 
 <h3>☀️ 경기도 태양광패널청소</h3>
 
@@ -595,6 +622,8 @@ KDRONE26 · 한국드론청소는
 공장, 창고, 축사, 주택 등에 설치된
 태양광패널의 먼지와 오염물을 관리합니다.
 </p>
+
+</a>
 
 </div>
 
@@ -738,21 +767,44 @@ KDRONE26 · 한국드론청소는
 
 <div class="region-links">
 
-<span>수원시</span> <span>성남시</span> <span>고양시</span> <span>용인시</span>
+<a href="suwon.html">수원시</a>
+<span>성남시</span>
+<a href="goyang.html">고양시</a>
+<span>용인시</span>
 
-<span>부천시</span> <span>안산시</span> <span>안양시</span> <span>화성시</span>
+<span>부천시</span>
+<span>안산시</span>
+<span>안양시</span>
+<span>화성시</span>
 
-<span>평택시</span> <span>남양주시</span> <span>시흥시</span> <span>파주시</span>
+<span>평택시</span>
+<a href="namyangju.html">남양주시</a>
+<span>시흥시</span>
+<a href="paju.html">파주시</a>
 
-<span>김포시</span> <span>광주시</span> <span>광명시</span> <span>군포시</span>
+<a href="gimpo.html">김포시</a>
+<span>광주시</span>
+<span>광명시</span>
+<span>군포시</span>
 
-<span>하남시</span> <span>오산시</span> <span>이천시</span> <span>안성시</span>
+<span>하남시</span>
+<span>오산시</span>
+<span>이천시</span>
+<span>안성시</span>
 
-<span>의왕시</span> <span>의정부시</span> <span>양주시</span> <span>포천시</span>
+<span>의왕시</span>
+<span>의정부시</span>
+<span>양주시</span>
+<span>포천시</span>
 
-<span>여주시</span> <span>구리시</span> <span>동두천시</span> <span>과천시</span>
+<span>여주시</span>
+<a href="guri.html">구리시</a>
+<span>동두천시</span>
+<span>과천시</span>
 
-<span>가평군</span> <span>연천군</span> <span>양평군</span>
+<span>가평군</span>
+<span>연천군</span>
+<span>양평군</span>
 
 </div>
 
