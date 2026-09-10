@@ -97,18 +97,6 @@ header {
     padding: 60px 20px;
 }
 
-/* 대표 이미지 */
-
-.hero-image {
-    width: 180px;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto 25px;
-    border: 4px solid white;
-}
-
 .logo {
     font-size: 48px;
     font-weight: 900;
@@ -147,6 +135,24 @@ header h1 {
 
 header p {
     font-size: 17px;
+}
+
+
+/* MAIN IMAGE */
+
+.main-image-section {
+    max-width: 100%;
+    padding: 30px 20px;
+    text-align: center;
+    background: #fff;
+}
+
+.main-image {
+    display: block;
+    width: min(100%, 650px);
+    height: auto;
+    margin: 0 auto;
+    border-radius: 18px;
 }
 
 
@@ -420,11 +426,6 @@ footer {
         font-size: 17px;
     }
 
-    .hero-image {
-        width: 140px;
-        height: 140px;
-    }
-
     nav {
         padding: 12px 2px;
     }
@@ -468,12 +469,6 @@ footer {
 <body>
 
 <header>
-
-<img
-    class="hero-image"
-    src="드론메인.png"
-    alt="KDRONE26 한국드론청소 대표 이미지"
->
 
 <div class="logo">
 <span class="k">K</span><span class="drone">DRONE</span><span class="number">26</span>
@@ -528,6 +523,18 @@ rel="noopener">
 </div>
 
 </header>
+
+<!-- =========================
+     MAIN IMAGE
+========================= -->
+
+<section class="main-image-section">
+
+<img src="드론메인.png"
+alt="KDRONE26 한국드론청소 드론청소 전문업체 대표 이미지"
+class="main-image">
+
+</section>
 
 <nav>
 
