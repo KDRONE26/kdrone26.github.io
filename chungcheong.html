@@ -34,6 +34,10 @@
 
 <meta property="og:locale" content="ko_KR">
 
+<meta property="og:image" content="https://kdrone26.github.io/드론메인.png">
+
+<meta property="og:image:alt" content="KDRONE26 한국드론청소 대표 이미지">
+
 <!-- 구조화 데이터 -->
 
 <script type="application/ld+json">
@@ -100,6 +104,16 @@ background: #111;
 color: white;
 text-align: center;
 padding: 60px 20px;
+}
+
+.hero-image {
+width: 180px;
+height: 180px;
+object-fit: cover;
+border-radius: 50%;
+display: block;
+margin: 0 auto 25px;
+border: 4px solid white;
 }
 
 .logo {
@@ -401,6 +415,11 @@ text-decoration: none;
 
 @media (max-width: 700px) {
 
+.hero-image {
+width: 140px;
+height: 140px;
+}
+
 .logo {
 font-size: 39px;
 }
@@ -462,6 +481,12 @@ max-width: 320px;
 <!-- HEADER -->
 
 <header>
+
+<img
+class="hero-image"
+src="드론메인.png"
+alt="KDRONE26 한국드론청소 대표 이미지"
+>
 
 <div class="logo">
 
@@ -1062,6 +1087,7 @@ Q. 견적은 어떻게 받나요?
 </strong>
 
 </p>
+
 <div class="header-buttons">
 
 <a class="header-button call-button"
