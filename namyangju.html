@@ -102,18 +102,6 @@ header {
     padding: 60px 20px;
 }
 
-/* 대표 이미지 */
-
-.hero-image {
-    width: 180px;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto 25px;
-    border: 4px solid white;
-}
-
 .logo {
     font-size: 48px;
     font-weight: 900;
@@ -152,6 +140,24 @@ header h1 {
 
 header p {
     font-size: 17px;
+}
+
+
+/* MAIN IMAGE */
+
+.main-image-section {
+    max-width: 100%;
+    padding: 30px 20px;
+    text-align: center;
+    background: #fff;
+}
+
+.main-image {
+    display: block;
+    width: min(100%, 650px);
+    height: auto;
+    margin: 0 auto;
+    border-radius: 18px;
 }
 
 
@@ -413,11 +419,6 @@ footer a {
 
 @media (max-width: 700px) {
 
-    .hero-image {
-        width: 140px;
-        height: 140px;
-    }
-
     .logo {
         font-size: 39px;
     }
@@ -480,12 +481,6 @@ footer a {
 
 <header>
 
-<img
-    class="hero-image"
-    src="드론메인.png"
-    alt="KDRONE26 한국드론청소 대표 이미지"
->
-
 <div class="logo">
 <span class="k">K</span><span class="drone">DRONE</span><span class="number">26</span>
 </div>
@@ -540,6 +535,17 @@ rel="noopener">
 
 </header>
 
+<!-- =========================
+     MAIN IMAGE
+========================= -->
+
+<section class="main-image-section">
+
+<img src="드론메인.png"
+alt="KDRONE26 한국드론청소 드론청소 전문업체 대표 이미지"
+class="main-image">
+
+</section>
 
 <!-- NAV -->
 
@@ -558,7 +564,6 @@ rel="noopener">
 <a href="#contact">문의</a>
 
 </nav>
-
 
 <!-- INTRO -->
 
@@ -597,7 +602,6 @@ KDRONE26 · 한국드론청소는
 
 </section>
 
-
 <!-- SERVICE -->
 
 <section id="service">
@@ -619,7 +623,6 @@ KDRONE26 · 한국드론청소는
 
 </a>
 
-
 <a class="service service-link" href="solar-cleaning.html">
 
 <h3>☀️ 남양주시 태양광패널청소</h3>
@@ -631,7 +634,6 @@ KDRONE26 · 한국드론청소는
 </p>
 
 </a>
-
 
 <div class="service">
 
@@ -645,7 +647,6 @@ KDRONE26 · 한국드론청소는
 
 </div>
 
-
 <div class="service">
 
 <h3>🪧 남양주시 간판 및 시설물청소</h3>
@@ -656,7 +657,6 @@ KDRONE26 · 한국드론청소는
 </p>
 
 </div>
-
 
 <div class="service">
 
@@ -669,7 +669,6 @@ KDRONE26 · 한국드론청소는
 </p>
 
 </div>
-
 
 <div class="service">
 
@@ -685,7 +684,6 @@ KDRONE26 · 한국드론청소는
 </div>
 
 </section>
-
 
 <!-- WHY -->
 
@@ -705,7 +703,6 @@ KDRONE26 · 한국드론청소는
 
 </div>
 
-
 <div class="why-box">
 
 <h3>✔ 필요한 곳만 집중청소</h3>
@@ -717,7 +714,6 @@ KDRONE26 · 한국드론청소는
 </p>
 
 </div>
-
 
 <div class="why-box">
 
@@ -732,7 +728,6 @@ KDRONE26 · 한국드론청소는
 
 </div>
 
-
 <div class="why-box">
 
 <h3>✔ 남양주시 전 지역 출장</h3>
@@ -746,7 +741,6 @@ KDRONE26 · 한국드론청소는
 </div>
 
 </section>
-
 
 <!-- WORK -->
 
@@ -778,7 +772,6 @@ KDRONE26 · 한국드론청소는
 
 </section>
 
-
 <!-- AREA -->
 
 <section id="area">
@@ -790,7 +783,6 @@ KDRONE26 · 한국드론청소는
 남양주시 주요 지역을 포함하여
 남양주시 전 지역으로 출장 상담이 가능합니다.
 </p>
-
 
 <div class="region-area">
 
@@ -804,7 +796,6 @@ KDRONE26 · 한국드론청소는
 
 </div>
 
-
 <div class="region-area">
 
 <h3>📍 평내동 · 호평동 · 금곡동</h3>
@@ -816,7 +807,6 @@ KDRONE26 · 한국드론청소는
 </p>
 
 </div>
-
 
 <div class="region-area">
 
@@ -830,7 +820,6 @@ KDRONE26 · 한국드론청소는
 
 </div>
 
-
 <div class="region-area">
 
 <h3>📍 화도읍 · 수동면</h3>
@@ -843,7 +832,6 @@ KDRONE26 · 한국드론청소는
 
 </div>
 
-
 <div class="region-area">
 
 <h3>📍 진건읍 · 퇴계원읍 · 와부읍</h3>
@@ -855,7 +843,6 @@ KDRONE26 · 한국드론청소는
 </p>
 
 </div>
-
 
 <div class="region-area">
 
@@ -878,7 +865,6 @@ KDRONE26 · 한국드론청소는
 </div>
 
 </section>
-
 
 <!-- FIELD -->
 
@@ -905,7 +891,6 @@ KDRONE26 · 한국드론청소는
 <p>✔ 건물 특정 구간 부분청소</p>
 
 </section>
-
 
 <!-- CONSULTING -->
 
@@ -938,13 +923,11 @@ KDRONE26 · 한국드론청소는
 
 </section>
 
-
 <!-- FAQ -->
 
 <section id="faq">
 
 <h2>남양주 드론청소 자주 묻는 질문</h2>
-
 
 <div class="faq">
 
@@ -960,7 +943,6 @@ Q. 남양주시 어디까지 출장 가능한가요?
 
 </div>
 
-
 <div class="faq">
 
 <strong>
@@ -974,7 +956,6 @@ Q. 남양주시에서 건물 외벽이나 일부 구간만 청소할 수 있나�
 </p>
 
 </div>
-
 
 <div class="faq">
 
@@ -990,7 +971,6 @@ Q. 태양광패널도 청소할 수 있나요?
 
 </div>
 
-
 <div class="faq">
 
 <strong>
@@ -1005,7 +985,6 @@ Q. 사람이 접근하기 어려운 높은 곳도 가능한가요?
 
 </div>
 
-
 <div class="faq">
 
 <strong>
@@ -1019,7 +998,6 @@ Q. 전국 출장도 가능한가요?
 </p>
 
 </div>
-
 
 <div class="faq">
 
@@ -1036,7 +1014,6 @@ Q. 견적은 어떻게 받나요?
 </div>
 
 </section>
-
 
 <!-- CONTACT -->
 
@@ -1087,7 +1064,6 @@ rel="noopener">
 </div>
 
 </section>
-
 
 <!-- FOOTER -->
 
