@@ -194,6 +194,56 @@ header p {
   border-radius: 18px;
 }
 
+/* 실제 외벽청소 작업사진 */
+
+.work-photo-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 45px 20px 50px;
+  background: #fff;
+  text-align: center;
+}
+
+.work-photo-title {
+  font-size: 29px;
+  font-weight: bold;
+  margin: 0 0 10px;
+}
+
+.work-photo-subtitle {
+  font-size: 16px;
+  color: #666;
+  margin: 0 0 28px;
+}
+
+.work-photo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.work-photo-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.work-photo {
+  display: block;
+  width: 100%;
+  height: 430px;
+  object-fit: cover;
+}
+
+.work-photo-caption {
+  padding: 16px 12px 18px;
+  font-size: 17px;
+  font-weight: bold;
+  color: #222;
+}
+
 nav {
   position: sticky;
   top: 0;
@@ -417,6 +467,29 @@ footer {
     max-width: 320px;
     margin: 8px auto;
   }
+
+  .work-photo-section {
+    padding: 35px 15px 40px;
+  }
+
+  .work-photo-title {
+    font-size: 25px;
+  }
+
+  .work-photo-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .work-photo {
+    height: auto;
+    max-height: 520px;
+    object-fit: cover;
+  }
+
+  .work-photo-caption {
+    font-size: 16px;
+  }
 }
 </style>
 
@@ -475,6 +548,52 @@ alt="KDRONE26 건물 외벽청소 드론청소 대표 이미지"
 class="main-image">
 
 </section>
+
+
+<!-- 실제 외벽청소 작업사진 -->
+
+<section class="work-photo-section">
+
+<h2 class="work-photo-title">
+실제 건물 외벽청소 작업
+</h2>
+
+<p class="work-photo-subtitle">
+청소드론을 활용한 건물 외벽청소 현장과 실제 청소 대상 외벽입니다.
+</p>
+
+<div class="work-photo-grid">
+
+<div class="work-photo-card">
+
+<img
+src="외벽청소-드론작업.png"
+alt="KDRONE26 청소드론 건물 외벽청소 작업 현장"
+class="work-photo">
+
+<div class="work-photo-caption">
+🚁 청소드론을 활용한 건물 외벽청소 작업
+</div>
+
+</div>
+
+<div class="work-photo-card">
+
+<img
+src="외벽청소-건물외벽.png"
+alt="KDRONE26 건물 외벽 오염 및 청소 대상 현장"
+class="work-photo">
+
+<div class="work-photo-caption">
+🏢 건물 외벽 오염 및 청소 대상 현장
+</div>
+
+</div>
+
+</div>
+
+</section>
+
 
 <nav>
 
