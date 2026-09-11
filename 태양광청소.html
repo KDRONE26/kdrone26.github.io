@@ -408,14 +408,36 @@ footer {
     font-size: 25px;
   }
 
-  .call-button,
-  .sms-button,
-  .kakao-button,
-  .blog-button {
-    display: block;
+  /* 상단 버튼은 기존 방식 유지 */
+
+  .header-buttons {
+    display: inline-block;
+  }
+
+  /* 하단 문의 버튼만 4개 가로 정렬 */
+
+  .contact .header-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
     width: 100%;
-    max-width: 320px;
-    margin: 8px auto;
+    gap: 4px;
+    margin-top: 20px;
+  }
+
+  .contact .header-buttons .header-button {
+    display: block;
+    flex: 1 1 0;
+    width: 25%;
+    max-width: none;
+    margin: 0;
+    padding: 11px 2px;
+    border-radius: 22px;
+    font-size: 11px;
+    line-height: 1.3;
+    white-space: nowrap;
+    text-align: center;
   }
 }
 </style>
@@ -478,12 +500,7 @@ class="main-image">
 
 <nav>
 
-<a href="#about">태양광청소</a>
-<a href="#target">청소대상</a>
-<a href="#process">작업과정</a>
-<a href="#important">중요사항</a>
-<a href="#faq">FAQ</a>
-<a href="#contact">문의</a>
+<a href="#about">태양광청소</a> <a href="#target">청소대상</a> <a href="#process">작업과정</a> <a href="#important">중요사항</a> <a href="#faq">FAQ</a> <a href="#contact">문의</a>
 
 </nav>
 
@@ -851,4 +868,3 @@ rel="noopener">
 
 </body>
 </html>
-
