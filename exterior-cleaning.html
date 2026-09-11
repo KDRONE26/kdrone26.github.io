@@ -508,19 +508,24 @@ footer {
     font-size: 25px;
   }
 
+
+  /* 모바일에서도 작업사진 2장 가로 배치 */
+
   .work-photo-grid {
-    grid-template-columns: 1fr;
-    gap: 18px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
   }
 
   .work-photo {
-    height: auto;
-    max-height: 520px;
+    width: 100%;
+    height: 220px;
     object-fit: cover;
   }
 
   .work-photo-caption {
-    font-size: 16px;
+    padding: 12px 5px 14px;
+    font-size: 13px;
+    line-height: 1.4;
   }
 
 }
