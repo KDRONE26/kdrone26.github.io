@@ -684,11 +684,11 @@ footer {
 
 
     /* =========================
-       하단 문의 버튼 4개
-       모바일 무조건 4열 가로배치
+       하단 문의 버튼만 변경
+       대구 페이지와 동일한 방식
     ========================= */
 
-    .contact-buttons {
+    .contact .contact-buttons {
         display: grid !important;
         grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
         width: 100% !important;
@@ -698,17 +698,17 @@ footer {
         padding: 0 !important;
     }
 
-    .contact-buttons .call-button,
-    .contact-buttons .sms-button,
-    .contact-buttons .kakao-button,
-    .contact-buttons .blog-button {
+    .contact .contact-buttons .call-button,
+    .contact .contact-buttons .sms-button,
+    .contact .contact-buttons .kakao-button,
+    .contact .contact-buttons .blog-button {
         display: flex !important;
         width: 100% !important;
         min-width: 0 !important;
         max-width: none !important;
         margin: 0 !important;
-        padding: 10px 1px !important;
-        border-radius: 18px !important;
+        padding: 11px 1px !important;
+        border-radius: 20px !important;
         font-size: 9px !important;
         line-height: 1.2 !important;
         white-space: nowrap !important;
@@ -1480,7 +1480,6 @@ Q. 전국 출장도 가능한가요?
 
 <!-- =========================
      하단 4개 상담 버튼
-     별도 클래스 적용
 ========================= -->
 
 <div class="contact-buttons">
