@@ -553,14 +553,36 @@ footer {
         font-size: 25px;
     }
 
+
+    /* =========================
+       MOBILE BUTTON
+       상단 + 하단 동일 적용
+    ========================= */
+
+    .button-area {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 4px;
+        margin-top: 20px;
+    }
+
     .call-button,
     .sms-button,
     .kakao-button,
     .blog-button {
         display: block;
-        width: 100%;
-        max-width: 320px;
-        margin: 8px auto;
+        flex: 1 1 0;
+        width: auto;
+        max-width: none;
+        margin: 0;
+        padding: 11px 2px;
+        border-radius: 22px;
+        font-size: 11px;
+        line-height: 1.3;
+        white-space: nowrap;
+        text-align: center;
     }
 
 }
@@ -624,13 +646,15 @@ KDRONE26 드론청소 전문업체 · 청소드론
 href="https://pf.kakao.com/_MxlrZX/chat"
 target="_blank"
 rel="noopener">
-💬 카카오톡 상담 </a>
+💬 카카오톡 상담
+</a>
 
 <a class="blog-button"
 href="https://m.blog.naver.com/kdrone26"
 target="_blank"
 rel="noopener">
-📝 네이버 블로그 </a>
+📝 네이버 블로그
+</a>
 
 </div>
 
@@ -642,7 +666,13 @@ rel="noopener">
 
 <nav>
 
-<a href="#about">회사소개</a> <a href="drone-cleaning.html">드론청소</a> <a href="#service">서비스</a> <a href="#work">작업분야</a> <a href="#region">출장지역</a> <a href="#faq">FAQ</a> <a href="#contact">문의</a>
+<a href="#about">회사소개</a>
+<a href="drone-cleaning.html">드론청소</a>
+<a href="#service">서비스</a>
+<a href="#work">작업분야</a>
+<a href="#region">출장지역</a>
+<a href="#faq">FAQ</a>
+<a href="#contact">문의</a>
 
 </nav>
 
@@ -1160,13 +1190,15 @@ Q. 견적은 어떻게 받나요?
 href="https://pf.kakao.com/_MxlrZX/chat"
 target="_blank"
 rel="noopener">
-💬 카카오톡 상담 </a>
+💬 카카오톡 상담
+</a>
 
 <a class="blog-button"
 href="https://m.blog.naver.com/kdrone26"
 target="_blank"
 rel="noopener">
-📝 네이버 블로그 </a>
+📝 네이버 블로그
+</a>
 
 </div>
 
