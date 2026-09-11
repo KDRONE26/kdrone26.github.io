@@ -33,7 +33,7 @@
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="태양광 패널 청소업체 | KDRONE26">
-<meta name="twitter:description" content="태양광패널·태양광모듈·태양광발전소 청소 전문. 청소드론을 활용한 태양광청소">
+<meta name="twitter:description" content="태양광패널·태양광모듈·태양광발전소 청소 전문. 청소드론을 활용한 태양광태양광청소">
 <meta name="twitter:image" content="https://kdrone26.github.io/드론메인.png">
 
 <script type="application/ld+json">
@@ -180,21 +180,6 @@ header p {
 .blog-button:hover {
   opacity: 0.85;
   transform: translateY(-2px);
-}
-
-.main-image-section {
-  max-width: 100%;
-  padding: 30px 20px;
-  text-align: center;
-  background: #fff;
-}
-
-.main-image {
-  display: block;
-  width: min(100%, 650px);
-  height: auto;
-  margin: 0 auto;
-  border-radius: 18px;
 }
 
 
@@ -499,13 +484,37 @@ footer {
   }
 
 
-  /* 상단 버튼은 기존 방식 유지 */
+  /* 상단 상담 버튼 4개 가로 정렬 */
 
-  .header-buttons {
-    display: inline-block;
+  .button-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    gap: 4px;
+    margin-top: 20px;
   }
 
-  /* 하단 문의 버튼만 4개 가로 정렬 */
+  .button-area .call-button,
+  .button-area .sms-button,
+  .button-area .kakao-button,
+  .button-area .blog-button {
+    display: block;
+    flex: 1 1 0;
+    width: 25%;
+    max-width: none;
+    margin: 0;
+    padding: 11px 2px;
+    border-radius: 22px;
+    font-size: 11px;
+    line-height: 1.3;
+    white-space: nowrap;
+    text-align: center;
+  }
+
+
+  /* 하단 문의 버튼 4개 가로 정렬 */
 
   .contact .header-buttons {
     display: flex;
@@ -570,30 +579,17 @@ footer {
 href="https://pf.kakao.com/_MxlrZX/chat"
 target="_blank"
 rel="noopener">
-💬 카카오톡 상담
-</a>
+💬 카카오톡 상담 </a>
 
 <a class="blog-button"
 href="https://m.blog.naver.com/kdrone26"
 target="_blank"
 rel="noopener">
-📝 네이버 블로그
-</a>
+📝 네이버 블로그 </a>
 
 </div>
 
 </header>
-
-
-<section class="main-image-section">
-
-<img
-src="드론메인.png"
-alt="KDRONE26 태양광 패널 청소업체 드론 태양광청소 대표 이미지"
-class="main-image">
-
-</section>
-
 
 <!-- 태양광 작업사진 자리 -->
 
@@ -621,7 +617,6 @@ class="main-image">
 
 </div>
 
-
 <div class="solar-photo-card">
 
 <div class="solar-photo-placeholder">
@@ -638,18 +633,11 @@ class="main-image">
 
 </section>
 
-
 <nav>
 
-<a href="#about">태양광청소</a>
-<a href="#target">청소대상</a>
-<a href="#process">작업과정</a>
-<a href="#important">중요사항</a>
-<a href="#faq">FAQ</a>
-<a href="#contact">문의</a>
+<a href="#about">태양광청소</a> <a href="#target">청소대상</a> <a href="#process">작업과정</a> <a href="#important">중요사항</a> <a href="#faq">FAQ</a> <a href="#contact">문의</a>
 
 </nav>
-
 
 <section id="about" class="intro">
 
@@ -684,7 +672,6 @@ KDRONE26 · 한국드론청소는 태양광 발전시설의
 </p>
 
 </section>
-
 
 <section id="target">
 
@@ -743,7 +730,6 @@ KDRONE26 · 한국드론청소는 태양광 발전시설의
 </div>
 
 </section>
-
 
 <section id="process" class="process">
 
@@ -808,7 +794,6 @@ KDRONE26 · 한국드론청소는 태양광 발전시설의
 
 </section>
 
-
 <section id="important">
 
 <h2>태양광패널청소에서 중요한 사항</h2>
@@ -854,7 +839,6 @@ KDRONE26은 현장 조건을 확인한 후
 
 </section>
 
-
 <section>
 
 <h2>태양광패널 부분청소도 상담 가능합니다.</h2>
@@ -877,7 +861,6 @@ KDRONE26은 현장 조건을 확인한 후
 </p>
 
 </section>
-
 
 <section id="faq">
 
@@ -954,7 +937,6 @@ KDRONE26은 현장 조건을 확인한 후
 
 </section>
 
-
 <section id="contact" class="contact">
 
 <h2>KDRONE26 태양광 패널 청소 문의</h2>
@@ -992,20 +974,17 @@ KDRONE26은 현장 조건을 확인한 후
 href="https://pf.kakao.com/_MxlrZX/chat"
 target="_blank"
 rel="noopener">
-💬 카카오톡 상담
-</a>
+💬 카카오톡 상담 </a>
 
 <a class="header-button blog-button"
 href="https://m.blog.naver.com/kdrone26"
 target="_blank"
 rel="noopener">
-📝 네이버 블로그
-</a>
+📝 네이버 블로그 </a>
 
 </div>
 
 </section>
-
 
 <footer>
 
