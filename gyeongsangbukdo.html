@@ -454,13 +454,38 @@ grid-template-columns: 1fr;
 font-size: 25px;
 }
 
-.call-button,
-.sms-button,
-.kakao-button,
-.blog-button {
+
+/* 상단 버튼은 기존 방식 유지 */
+
+.header-buttons {
+display: inline-block;
+}
+
+
+/* 하단 문의 버튼만 4개 가로 정렬 */
+
+.contact .header-buttons {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: nowrap;
+width: 100%;
+gap: 4px;
+margin-top: 20px;
+}
+
+.contact .header-buttons .header-button {
 display: block;
-margin: 8px auto;
-max-width: 320px;
+flex: 1 1 0;
+width: 25%;
+max-width: none;
+margin: 0;
+padding: 11px 2px;
+border-radius: 22px;
+font-size: 11px;
+line-height: 1.3;
+white-space: nowrap;
+text-align: center;
 }
 
 }
@@ -991,24 +1016,24 @@ Q. 견적은 어떻게 받나요?
 </a>
 
 
-<div class="button-area">
+<div class="header-buttons">
 
-<a class="call-button" href="tel:01090918826">
+<a class="header-button call-button" href="tel:01090918826">
 📞 전화 상담하기
 </a>
 
-<a class="sms-button" href="sms:01090918826">
+<a class="header-button sms-button" href="sms:01090918826">
 💬 문자 상담하기
 </a>
 
-<a class="kakao-button"
+<a class="header-button kakao-button"
 href="https://pf.kakao.com/_MxlrZX/chat"
 target="_blank"
 rel="noopener">
 💬 카카오톡 상담
 </a>
 
-<a class="blog-button"
+<a class="header-button blog-button"
 href="https://m.blog.naver.com/kdrone26"
 target="_blank"
 rel="noopener">
@@ -1052,3 +1077,4 @@ KDRONE26 · 한국드론청소
 </body>
 
 </html>
+
