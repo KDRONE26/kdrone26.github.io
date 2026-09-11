@@ -9,7 +9,7 @@
 <meta name="naver-site-verification" content="9e06aae381fedff78777685939cd0cefa05f7b34">
 
 <link rel="icon" type="image/png" href="/favicon.png">
-    
+
 <title>수원 드론청소 전문업체 | 건물 외벽·유리창·태양광 청소 | KDRONE26</title>
 
 <meta name="description" content="수원 드론청소 전문업체 KDRONE26 | 수원시 전 지역 건물 외벽청소·드론 유리창청소·태양광패널청소·간판청소·공장·창고청소 전문">
@@ -542,6 +542,8 @@ footer{
         color:#FFFFFF;
     }
 
+    /* 상단 버튼은 기존 세로 방식 유지 */
+
     .header-buttons{
         flex-direction:column;
         max-width:360px;
@@ -622,6 +624,32 @@ footer{
     .contact-area{
         color:#111111;
     }
+
+    /* 하단 문의 버튼만 모바일 4개 가로 정렬 */
+
+    .contact-box .button-group{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-wrap:nowrap;
+        width:100%;
+        gap:4px;
+        margin-top:20px;
+    }
+
+    .contact-box .button-group .contact-btn{
+        display:block;
+        flex:1 1 0;
+        width:25%;
+        max-width:none;
+        margin:0;
+        padding:11px 2px;
+        border-radius:22px;
+        font-size:11px;
+        line-height:1.3;
+        white-space:nowrap;
+        text-align:center;
+    }
 }
 
 @media(max-width:480px){
@@ -636,12 +664,14 @@ footer{
         font-size:16px;
     }
 
-    .button-group{
-        flex-direction:column;
+    /* 하단 문의 버튼은 4개 가로 정렬 유지 */
+
+    .contact-box .button-group{
+        flex-direction:row;
     }
 
-    .contact-btn{
-        width:100%;
+    .contact-box .contact-btn{
+        width:25%;
     }
 
 }
@@ -748,9 +778,10 @@ rel="noopener">
 <section class="main-image-section">
 
 <img
-    src="드론메인.png"
-    alt="KDRONE26 한국드론청소 드론청소 전문업체 대표 이미지"
-    class="main-image"
+src="드론메인.png"
+alt="KDRONE26 한국드론청소 드론청소 전문업체 대표 이미지"
+class="main-image"
+
 >
 
 </section>
