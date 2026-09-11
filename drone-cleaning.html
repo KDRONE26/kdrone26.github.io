@@ -570,15 +570,6 @@ h2 {
 
 
 /* =========================
-   하단 문의 버튼
-========================= */
-
-.contact-buttons {
-    margin-top: 20px;
-}
-
-
-/* =========================
    FOOTER
 ========================= */
 
@@ -688,35 +679,28 @@ footer {
        대구 페이지와 동일한 방식
     ========================= */
 
-    .contact .contact-buttons {
-        display: grid !important;
-        grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
-        width: 100% !important;
-        max-width: 100% !important;
-        gap: 4px !important;
-        margin: 20px 0 0 !important;
-        padding: 0 !important;
+    .contact .header-buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        width: 100%;
+        gap: 4px;
+        margin-top: 20px;
     }
 
-    .contact .contact-buttons .call-button,
-    .contact .contact-buttons .sms-button,
-    .contact .contact-buttons .kakao-button,
-    .contact .contact-buttons .blog-button {
-        display: flex !important;
-        width: 100% !important;
-        min-width: 0 !important;
-        max-width: none !important;
-        margin: 0 !important;
-        padding: 11px 1px !important;
-        border-radius: 20px !important;
-        font-size: 9px !important;
-        line-height: 1.2 !important;
-        white-space: nowrap !important;
-        overflow: hidden !important;
-        text-overflow: clip !important;
-        text-align: center !important;
-        justify-content: center !important;
-        align-items: center !important;
+    .contact .header-buttons .header-button {
+        display: block;
+        flex: 1 1 0;
+        width: 25%;
+        max-width: none;
+        margin: 0;
+        padding: 11px 2px;
+        border-radius: 22px;
+        font-size: 11px;
+        line-height: 1.3;
+        white-space: nowrap;
+        text-align: center;
     }
 
 }
@@ -1482,24 +1466,26 @@ Q. 전국 출장도 가능한가요?
      하단 4개 상담 버튼
 ========================= -->
 
-<div class="contact-buttons">
+<div class="header-buttons">
 
-<a class="call-button" href="tel:01090918826">
+<a class="header-button call-button"
+href="tel:01090918826">
 📞 전화 상담하기
 </a>
 
-<a class="sms-button" href="sms:01090918826">
+<a class="header-button sms-button"
+href="sms:01090918826">
 💬 문자 상담하기
 </a>
 
-<a class="kakao-button"
+<a class="header-button kakao-button"
 href="https://pf.kakao.com/_MxlrZX/chat"
 target="_blank"
 rel="noopener">
 💬 카카오톡 상담
 </a>
 
-<a class="blog-button"
+<a class="header-button blog-button"
 href="https://m.blog.naver.com/kdrone26"
 target="_blank"
 rel="noopener">
